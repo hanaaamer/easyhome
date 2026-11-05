@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Home | إيزي هوم - نظافة بيتك علينا وراحتك عليك</title>
+  <meta name="description" content="إيزي هوم لخدمات تنظيف الكنب، المجالس، السجاد، والمنازل بأحدث الأجهزة وفريق عمل متخصص.">
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=7">
+</head>
+<body>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Right: Logo -->
+      <a href="#" class="header-logo" aria-label="الرئيسية">
+        <img src="images/logo.png" alt="Easy Home إيزي هوم">
+      </a>
+
+      <!-- Center: Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+          <li><a href="#services" class="nav-link">خدماتنا</a></li>
+          <li><a href="#why-us" class="nav-link">ليه إيزي هوم</a></li>
+          <li><a href="#before-after" class="nav-link">قبل وبعد</a></li>
+          <li><a href="#testimonials" class="nav-link">آراء عملائنا</a></li>
+          <li><a href="#about" class="nav-link">عن إيزي هوم</a></li>
+          <li class="mobile-only-cta">
+            <a href="#booking" class="btn-drawer-cta">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span>اطلب عرض سعر الحين</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
+      <!-- Left: CTA Button -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="#booking" class="btn-nav-cta">
+          <i class="fa-regular fa-calendar-days"></i>
+          <span>اطلب عرض سعر الحين</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="فتح القائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= Hero Section ================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        
+        <!-- Right Column: Text & CTA -->
+        <div class="hero-text-block">
+          <h1 class="hero-title-main">
+            نظافة بيتك علينا...
+            <span class="cyan-text">ورااحتك عليك!</span>
+          </h1>
+
+          <p class="hero-question-title">
+            كنبك يحتاج تنظيف؟ مجلسك فقد رونقه؟<br>
+            أو سجادك يحتاج عناية؟
+          </p>
+
+          <p class="hero-paragraph">
+            مع إيزي هوم، نوفر لك خدمات تنظيف احترافية بأجهزة حديثة وفريق متخصص يهتم بأدق التفاصيل.
+          </p>
+
+          <div>
+            <a href="#booking" class="hero-cta-btn">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span>اطلب عرض سعر الحين</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Left Column: Cleaner Visual with Modern Styled Card -->
+        <div class="hero-cleaner-wrap">
+          <div class="hero-image-card">
+            <div class="hero-img-inner">
+              <img src="images/hero_cleaner_hq.jpg?v=5" alt="فني تنظيف إيزي هوم ينظف الكنب بأجهزة الشفط المتطورة">
+            </div>
+
+            <!-- Floating Badge 1 (Top Left in RTL) -->
+            <div class="hero-float-badge badge-top-left">
+              <span class="badge-icon-bubble">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </span>
+              <div class="badge-label-wrap">
+                <span class="badge-label-bold">تنظيف عميق بالبخار</span>
+                <span class="badge-label-sub">أحدث أجهزة الشفط والتعقيم</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2 (Bottom Right in RTL) -->
+            <div class="hero-float-badge badge-bottom-right">
+              <span class="badge-icon-bubble green">
+                <i class="fa-solid fa-shield-halved"></i>
+              </span>
+              <div class="badge-label-wrap">
+                <span class="badge-label-bold">ضمان رضا العميل</span>
+                <span class="badge-label-sub">فريق متخصص وخبرة معتمدة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Dots Indicator -->
+      <div class="hero-dots-indicator">
+        <span></span>
+        <span class="active"></span>
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Wave Divider between Hero and Services -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0C320 45 680 55 1040 25C1240 10 1360 5 1440 0V60H0V0Z" fill="#ffffff"/>
+        <path d="M0 0C320 45 680 55 1040 25C1240 10 1360 5 1440 0" stroke="#009fe3" stroke-width="2" stroke-opacity="0.4"/>
+      </svg>
+    </div>
+
+    <!-- ================= Services Section ================= -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="sec-header">
+          <h2 class="sec-title">خدماتنا</h2>
+          <p class="sec-subtitle">وش تحتاج تنظيف؟ أبشر، إحنا لها!</p>
+        </div>
+
+        <!-- 4 Services Cards -->
+        <div class="services-grid-4">
+          
+          <!-- Card 1 (Right): Sofa Steam Cleaning -->
+          <div class="service-card-item">
+            <div class="card-thumb-wrap">
+              <img src="images/svc_sofa_hd.jpg?v=4" alt="تنظيف وغسيل الكنب بالبخار">
+            </div>
+            <div class="card-floating-icon">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <div class="card-body-content">
+              <h3 class="card-item-title">تنظيف وغسيل الكنب بالبخار</h3>
+              <p class="card-item-desc">
+                كنبك عليه بقع وآثار استخدام؟ نعتني بتنظيفه بأجهزة ومواد مناسبة لنوع القماش، عشان يرجع نظيف ومرتب.
+              </p>
+              <a href="#booking" class="btn-card-action" data-service="تنظيف وغسيل الكنب بالبخار">
+                <span>احجز خدمتك الحين</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Majlis Cleaning -->
+          <div class="service-card-item">
+            <div class="card-thumb-wrap">
+              <img src="images/svc_majlis_hd.jpg?v=4" alt="تنظيف المجالس">
+            </div>
+            <div class="card-floating-icon">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <div class="card-body-content">
+              <h3 class="card-item-title">تنظيف المجالس</h3>
+              <p class="card-item-desc">
+                مجلسك يستاهل يكون دايماً بأحسن حال! نهتم بتنظيف المجالس والجلسات العربية والمساند بكل عناية.
+              </p>
+              <a href="#booking" class="btn-card-action" data-service="تنظيف المجالس">
+                <span>احجز خدمتك الحين</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Sofa & Carpet Cleaning -->
+          <div class="service-card-item">
+            <div class="card-thumb-wrap">
+              <img src="images/svc_carpet_hd.jpg?v=4" alt="تنظيف الكنب والسجاد">
+            </div>
+            <div class="card-floating-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="card-body-content">
+              <h3 class="card-item-title">تنظيف الكنب والسجاد</h3>
+              <p class="card-item-desc">
+                الغبار والبقع ما لها مكان! نوفر لك تنظيف الكنب والسجاد بأجهزة شفط وتنظيف عميق تناسب نوع المفروشات.
+              </p>
+              <a href="#booking" class="btn-card-action" data-service="تنظيف الكنب والسجاد">
+                <span>احجز خدمتك الحين</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 (Left): House & Villa Cleaning -->
+          <div class="service-card-item">
+            <div class="card-thumb-wrap">
+              <img src="images/svc_villa_hd.jpg?v=4" alt="تنظيف المنازل والشقق والفلل">
+            </div>
+            <div class="card-floating-icon">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+            <div class="card-body-content">
+              <h3 class="card-item-title">تنظيف المنازل والشقق والفلل</h3>
+              <p class="card-item-desc">
+                من المجالس للكنب والسجاد والمراتب، نعتني بنظافة مفروشات بيتك، سواء كان شقة أو فيلا.
+              </p>
+              <a href="#booking" class="btn-card-action" data-service="تنظيف المنازل والشقق والفلل">
+                <span>احجز خدمتك الحين</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Water Tank Banner -->
+        <div class="water-tank-pill-banner">
+          <div class="tank-banner-right">
+            <div class="tank-graphic-box">
+              <img src="images/tank.png" alt="خزان مياه">
+            </div>
+            <div class="tank-text-info">
+              <h3 class="tank-heading">تنظيف وتعقيم خزانات المياه</h3>
+              <p class="tank-subnote">خدمة مقترحة تضاف بعد التأكد من توفرها لدى الشركة، وتحديد تفاصيل التنظيف والتعقيم.</p>
+            </div>
+          </div>
+
+          <a href="#booking" class="btn-tank-pill" data-service="تنظيف وتعقيم خزانات المياه">
+            <span>احجز خدمتك الحين</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Why Us Section ================= -->
+    <section class="why-us-section" id="why-us">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="sec-header">
+          <h2 class="sec-title">ليه إيزي هوم ؟</h2>
+        </div>
+
+        <!-- 4 Feature Cards -->
+        <div class="why-features-grid">
+          
+          <!-- Card 1 -->
+          <div class="why-card-item">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="why-feature-title">خبرة نعتمد عليها</h3>
+            <p class="why-feature-desc">فريق بخبرة عملية تتجاوز أكثر من 12 سنة.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="why-card-item">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3 class="why-feature-title">أجهزة تنظيف احترافية</h3>
+            <p class="why-feature-desc">نستخدم معدات حديثة تناسب طبيعة كل خدمة.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="why-card-item">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="why-feature-title">فريق يعرف شغله</h3>
+            <p class="why-feature-desc">فنيون متخصصون يهتمون بالتفاصيل من البداية للنهاية.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="why-card-item">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+            <h3 class="why-feature-title">السعر واضح من البداية</h3>
+            <p class="why-feature-desc">تعرف تكلفة خدمتك قبل ما نبدأ.</p>
+          </div>
+
+        </div>
+
+        <!-- Amber / Gold Button -->
+        <div class="why-btn-wrap">
+          <a href="#booking" class="btn-amber-gold">
+            <span>خل النظافة علينا</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Before & After Section ================= -->
+    <section class="before-after-section" id="before-after">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="sec-header">
+          <h2 class="sec-title">الفرق واضح... والنتيجة تشوفها بنفسك!</h2>
+          <p class="sec-subtitle">شوف كيف نهتم بتنظيف الكنب والمجالس والسجاد، وكيف تفرق العناية بالتفاصيل.</p>
+        </div>
+
+        <!-- 3 Comparison Cards -->
+        <div class="ba-cards-grid">
+          
+          <!-- Card 1: Majlis -->
+          <div class="ba-card-box">
+            <img src="images/ba_majlis_hd.jpg?v=3" alt="المجلس قبل وبعد التنظيف">
+            <div class="ba-center-divider">
+              <span class="ba-divider-circle"><i class="fa-solid fa-arrows-left-right"></i></span>
+            </div>
+            <span class="ba-pill-badge ba-pill-before">قبل</span>
+            <span class="ba-pill-badge ba-pill-after">بعد</span>
+          </div>
+
+          <!-- Card 2: Sofa Cushion -->
+          <div class="ba-card-box">
+            <img src="images/ba_sofa_hd.jpg?v=3" alt="الكنب قبل وبعد التنظيف">
+            <div class="ba-center-divider">
+              <span class="ba-divider-circle"><i class="fa-solid fa-arrows-left-right"></i></span>
+            </div>
+            <span class="ba-pill-badge ba-pill-before">قبل</span>
+            <span class="ba-pill-badge ba-pill-after">بعد</span>
+          </div>
+
+          <!-- Card 3: Deep Carpet -->
+          <div class="ba-card-box">
+            <img src="images/ba_carpet_hd.jpg?v=3" alt="السجاد قبل وبعد التنظيف">
+            <div class="ba-center-divider">
+              <span class="ba-divider-circle"><i class="fa-solid fa-arrows-left-right"></i></span>
+            </div>
+            <span class="ba-pill-badge ba-pill-before">قبل</span>
+            <span class="ba-pill-badge ba-pill-after">بعد</span>
+          </div>
+
+        </div>
+
+        <!-- CTA Action -->
+        <div class="ba-action-wrap">
+          <a href="#booking" class="btn-ba-action">
+            <span>اطلب خدمتك الحين</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Testimonials Section ================= -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="sec-header">
+          <h2 class="sec-title">لا تاخذ الكلام منا... اسمع من عملائنا!</h2>
+          <p class="sec-subtitle">ثقتكم فينا تعني لنا الكثير، ورضاكم هو اللي يخلينا نهتم بكل تفصيلة.</p>
+        </div>
+
+        <!-- Testimonials Row with Arrows -->
+        <div class="testi-carousel-row">
+          <button class="testi-arrow-btn" id="testimonialPrev" aria-label="السابق">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="testi-cards-container" id="testimonialsGrid">
+            <!-- Card 1: محمد العلي -->
+            <div class="testi-single-card">
+              <div class="testi-avatar-box">
+                <img src="images/av1.jpg" alt="محمد العلي">
+              </div>
+              <p class="testi-quote-text">"خدمة ممتازة وفريق محترف، أنصح بالتعامل معهم."</p>
+              <div class="testi-stars-row">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="testi-client-name">محمد العلي</h4>
+            </div>
+
+            <!-- Card 2: سارة محمد -->
+            <div class="testi-single-card">
+              <div class="testi-avatar-box">
+                <img src="images/av2.jpg" alt="سارة محمد">
+              </div>
+              <p class="testi-quote-text">"تنظيف احترافي وسرعة في التنفيذ."</p>
+              <div class="testi-stars-row">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="testi-client-name">سارة محمد</h4>
+            </div>
+
+            <!-- Card 3: أحمد السعيد -->
+            <div class="testi-single-card">
+              <div class="testi-avatar-box">
+                <img src="images/av3.jpg" alt="أحمد السعيد">
+              </div>
+              <p class="testi-quote-text">"البيت صار أنظف وأجمل، شكراً إيزي هوم."</p>
+              <div class="testi-stars-row">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="testi-client-name">أحمد السعيد</h4>
+            </div>
+          </div>
+
+          <button class="testi-arrow-btn" id="testimonialNext" aria-label="التالي">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Booking & Info Section ================= -->
+    <section class="bottom-booking-section" id="booking">
+      <div class="booking-inner-wrap">
+
+        <!-- ① RIGHT PANEL (first in DOM = right in RTL): Booking Form -->
+        <div class="booking-right-panel">
+          <h3 class="form-box-title">احجز خدمتك الآن</h3>
+          <form class="pure-form-stack" id="bookingForm">
+
+            <div class="input-with-icon-wrap">
+              <input type="text" id="clientName" class="app-form-input" placeholder="الاسم" required>
+              <i class="fa-solid fa-user app-input-icon"></i>
+            </div>
+
+            <div class="input-with-icon-wrap">
+              <input type="tel" id="clientPhone" class="app-form-input" placeholder="رقم الجوال" required>
+              <i class="fa-solid fa-phone app-input-icon"></i>
+            </div>
+
+            <div class="input-with-icon-wrap">
+              <input type="text" id="clientCity" class="app-form-input" placeholder="المدينة" required>
+              <i class="fa-solid fa-location-dot app-input-icon"></i>
+            </div>
+
+            <div class="input-with-icon-wrap">
+              <select id="clientService" class="app-form-select" required>
+                <option value="" disabled selected>الخدمة المطلوبة</option>
+                <option value="تنظيف وغسيل الكنب بالبخار">تنظيف وغسيل الكنب بالبخار</option>
+                <option value="تنظيف المجالس">تنظيف المجالس</option>
+                <option value="تنظيف الكنب والسجاد">تنظيف الكنب والسجاد</option>
+                <option value="تنظيف المنازل والشقق والفلل">تنظيف المنازل والشقق والفلل</option>
+                <option value="تنظيف وتعقيم خزانات المياه">تنظيف وتعقيم خزانات المياه</option>
+              </select>
+              <i class="fa-solid fa-list-check app-input-icon"></i>
+            </div>
+
+            <button type="submit" class="btn-form-dark-cta">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span>اطلب عرض سعر الحين</span>
+            </button>
+
+            <button type="button" id="whatsappDirectBtn" class="btn-form-green-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>كلمنا على واتساب</span>
+            </button>
+
+          </form>
+        </div>
+
+        <!-- ② LEFT PANEL (second in DOM = left in RTL): Info + room photo -->
+        <div class="booking-left-panel" id="about">
+          <!-- Info text -->
+          <div class="booking-info-text-block">
+            <div class="booking-info-logo">
+              <img src="images/logo.png" alt="Easy Home إيزي هوم">
+            </div>
+            <h2 class="info-lead-title">
+              إيزي هوم ... نهتم ببيتك كأنه بيتنا!
+            </h2>
+            <p class="info-body-text">
+              في إيزي هوم، نوفر خدمات تنظيف وتكييف وصيانة للمنازل والمنشآت، بفريق متخصص وأجهزة حديثة، وحرصنا عرض الخدمة وراحة العميل.
+            </p>
+            <p class="info-highlight-note">
+              بيتك يحتاج تنظيف؟ لا تشيل هم!
+            </p>
+            <a href="tel:0547427940" class="info-clickable-phone">
+              <span class="phone-round-icon">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <span>0547427940</span>
+            </a>
+          </div>
+
+          <!-- Styled room photo card -->
+          <div class="booking-room-photo">
+            <img src="images/living_room.jpg?v=3" alt="غرفة معيشة نظيفة وأنيقة مع إيزي هوم">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner-content">
+      <!-- Right: Logo -->
+      <div class="footer-logo-brand">
+        <svg viewBox="0 0 60 60" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="27" stroke="#009fe3" stroke-width="3.5" stroke-dasharray="140 35"/>
+          <path d="M19 31H41C41 38 35 43 28 43C21 43 18 38 18 31Z" fill="#009fe3" fill-opacity="0.3" stroke="#009fe3" stroke-width="3"/>
+          <path d="M25 24L31 18L37 24" stroke="#009fe3" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-txt-en">Easy Home</span>
+        <span class="brand-txt-ar">إيـزي هـوم</span>
+      </div>
+
+      <!-- Center: Social Icons -->
+      <div class="footer-social-icons">
+        <a href="https://wa.me/966547427940" target="_blank" class="social-circle-item" aria-label="واتساب">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" target="_blank" class="social-circle-item" aria-label="منصة إكس">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#" target="_blank" class="social-circle-item" aria-label="إنستغرام">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank" class="social-circle-item" aria-label="يوتيوب">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
+      <!-- Left: Copyright -->
+      <div class="footer-rights-text">
+        2025 &copy; جميع الحقوق محفوظة - إيزي هوم
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/966547427940" target="_blank" class="floating-whatsapp-widget" aria-label="محادثة واتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Booking Success Modal -->
+  <div class="success-modal-overlay" id="bookingSuccessModal">
+    <div class="success-modal-box">
+      <div class="modal-tick-icon">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="modal-main-heading">تم استلام طلبك بنجاح!</h3>
+      <p class="modal-desc-text">
+        شكراً لتواصلك مع إيزي هوم. سيقوم فريق خدمة العملاء بالتواصل معك خلال دقائق لتأكيد الموعد وتقديم أفضل عرض سعر.
+      </p>
+      <button class="btn-modal-dismiss" id="closeModalBtn">حسناً، شكراً</button>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>
